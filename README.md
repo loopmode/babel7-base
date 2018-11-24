@@ -1,7 +1,7 @@
 # babel7-base
 
 Common dependencies and configs for developing packages with babel 7.
-Contains `babel`, `esdoc`, `eslint` and `prettier`, as well as some plugins/extensions in slightly outdated but stable versions.
+Contains `babel`, `esdoc`, `eslint` and `prettier`, as well as some plugins/extensions.
 
 Provides CLI to copy default config files like `.eslintrc`, `prettier.config.js` etc
 
@@ -23,14 +23,7 @@ b7 install
 
 ### Use-case
 
-Use the `b7` command to get started with a new package that you want to publish or use elsewhere:
-
-```
-mkdir my-package
-cd my-package
-npm init -y
-b7 install
-```
+Use the `b7` command to get started with a new package that you want to publish or use elsewhere. It will ask you a couple of questions, but you can just go ahead and hit enter to use the defaults.
 
 ### Configuration
 
