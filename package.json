@@ -1,6 +1,6 @@
 {
   "name": "@loopmode/babel7-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Common dependencies and build tools for babel7-based packages",
   "author": "Jovica Aleksic <jovica.aleksic@loopmode.de>",
   "license": "MIT",
