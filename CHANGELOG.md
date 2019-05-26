@@ -1,3 +1,6 @@
+# 1.2.4
+- Specify `parser: 'babel'` in prettier config
+
 # 1.2.3
 
 - Specify core-js@3 in babel config
