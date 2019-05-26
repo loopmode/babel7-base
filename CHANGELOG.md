@@ -1,3 +1,7 @@
+# 1.2.1
+
+-   Fix added scripts to not use `yarn` when `npm` was chosen
+
 # 1.2.0
 
 -   automatically initialize package when `package.json` is missing

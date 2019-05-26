@@ -109,7 +109,7 @@ async function install(dir, { manager, files, scripts, dependencies, installDepe
     }
 
     if (scripts && scripts.length) {
-        await installScripts(dir, scripts);
+        await installScripts(dir, scripts, manager);
     }
 
     if (dependencies !== DependencyMode.NONE) {
@@ -176,13 +176,17 @@ async function installFiles(dir, files, dependencyMode) {
     }
 }
 
-async function installScripts(dir, scripts) {
+async function installScripts(dir, scripts, manager) {
     const pkg = getPackage(dir);
     try {
         pkg.scripts = pkg.scripts || {};
         scripts.forEach(name => {
-            console.log(`[b7] add script - "${name}": "${supportedScripts[name]}"`);
-            pkg.scripts[name] = supportedScripts[name];
+            let scriptValue = supportedScripts[name];
+            console.log(`[b7] add script - "${name}": "${scriptValue}"`);
+            if (manager === PackageManager.NPM && scriptValue.includes('yarn')) {
+                scriptValue = scriptValue.replace(/yarn/g, 'npm run');
+            }
+            pkg.scripts[name] = scriptValue;
         });
         await fs.writeJson(path.resolve(dir, 'package.json'), pkg, { spaces: 2 });
     } catch (error) {
