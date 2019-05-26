@@ -13,6 +13,11 @@ module.exports = {
     globals: {
         Promise: true
     },
+    settings: {
+        react: {
+            version: 'detect'
+        }
+    },
     rules: {
         'prettier/prettier': [
             'warn',

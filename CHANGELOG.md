@@ -1,4 +1,9 @@
+# 1.2.5
+
+- Specify `detect` react version in eslint config
+
 # 1.2.4
+
 - Specify `parser: 'babel'` in prettier config
 
 # 1.2.3
