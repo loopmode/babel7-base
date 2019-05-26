@@ -1,6 +1,6 @@
 {
   "name": "@loopmode/babel7-base",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Common dependencies and build tools for babel7-based packages",
   "author": "Jovica Aleksic <jovica.aleksic@loopmode.de>",
   "license": "MIT",
@@ -25,6 +25,7 @@
     "babel-eslint": "9.0.0",
     "babel-preset-react": "^6.24.1",
     "commander": "^2.17.0",
+    "core-js": "3",
     "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-jsx-plugin": "^1.0.0",

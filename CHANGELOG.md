@@ -1,3 +1,7 @@
+# 1.2.2
+
+- Add core-js@3 dependency
+
 # 1.2.1
 
 -   Fix added scripts to not use `yarn` when `npm` was chosen
