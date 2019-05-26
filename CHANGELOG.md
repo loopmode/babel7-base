@@ -1,3 +1,7 @@
+# 1.2.3
+
+- Specify core-js@3 in babel config
+
 # 1.2.2
 
 - Add core-js@3 dependency
