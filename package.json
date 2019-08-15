@@ -8,6 +8,11 @@
   "bin": {
     "b7": "./cli/index.js"
   },
+  "resolutions": {
+    "lodash": "4.17.13",
+    "lodash.merge": "4.6.2",
+    "js-yaml": "3.13.1"
+  },
   "dependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "7.2.2",
