@@ -1,3 +1,7 @@
+# 1.2.6
+
+- Configure editorconfig to use 2 spaces indentation for json files
+
 # 1.2.5
 
 - Specify `detect` react version in eslint config
